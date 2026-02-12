@@ -13,7 +13,7 @@ import {
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
-    <header className="w-full ">
+    <header className="w-full relative z-10">
       {/* Top announcement bar */}
       <div className="bg-gradient-to-r from-[#342B7C] to-[#00D4EB] text-white  px-6 py-3 flex items-center justify-between gap-3 small:px-10 small:py-2 medium:px-12.5 medium:py-3 base:px-15 base:py-3  large:px-30">
         <p className="leading-tight  text-[11px] medium:text-[12px] base:text-[14px]">
@@ -50,7 +50,7 @@ const Header = () => {
       </div>
       {/* Main navbar */}
       <div className="bg-black text-white px-6 py-2.5 flex items-center justify-between
-      small:px-10 small:py-1.5 base:px-12.5 large:px-30
+      small:px-10 small:py-1.5 medium:px-12.5 large:px-30 
       ">
         <div className="flex items-center gap-3">
           <Image
