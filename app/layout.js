@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-visual relative max-w-[1920px] mx-auto`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-visual relative max-w-[1920px] mx-auto pt-[112px] medium:pt-[131px]`}
       >
        <SmoothScroll>{children}</SmoothScroll>
       </body>

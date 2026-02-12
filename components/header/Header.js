@@ -13,7 +13,7 @@ import {
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
-    <header className="w-full relative z-10">
+    <header className="w-full z-10 fixed top-0 left-0 z-20 h-[112px] medium:h-[131px]">
       {/* Top announcement bar */}
       <div className="bg-gradient-to-r from-[#342B7C] to-[#00D4EB] text-white  px-6 py-3 flex items-center justify-between gap-3 small:px-10 small:py-2 medium:px-12.5 medium:py-3 base:px-15 base:py-3  large:px-30">
         <p className="leading-tight  text-[11px] medium:text-[12px] base:text-[14px]">
