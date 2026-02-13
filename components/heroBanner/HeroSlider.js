@@ -52,7 +52,7 @@ export default function HeroSlider({className}) {
       </Swiper>
       <style jsx global>{`
         .custom-swiper .swiper-pagination {
-          bottom: 10px;
+          bottom: 30px;
         }
         .custom-swiper .swiper-pagination-bullet {
           width: 8px;
