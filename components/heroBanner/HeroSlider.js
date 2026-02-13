@@ -12,7 +12,7 @@ export default function HeroSlider({className}) {
         modules={[Pagination]}
         slidesPerView={1}
         pagination={{ clickable: true }}
-        className="custom-swiper"
+        className="custom-swiper cursor-(--f-cursor-grab)"
       >
         <SwiperSlide>
           

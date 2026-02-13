@@ -90,7 +90,7 @@ const FooterFaq = () => {
             setActiveTab(0);
             setOpen(0);
           }} 
-          className={`rounded-[40px] py-[10px] px-[16px] shrink-0 text-[14px] small:text-[13px] medium:text-[14px] base:text-[16px]
+          className={`cursor-(--f-cursor-pointer) rounded-[40px] py-[10px] px-[16px] shrink-0 text-[14px] hover:bg-[#02A7B6] small:text-[13px] medium:text-[14px] base:text-[16px]
   ${activeTab === 0 ? "bg-[#02A7B6]" : "border border-[#8B8B8B]"}`}
         >
           FAQ Type -1
@@ -100,7 +100,7 @@ const FooterFaq = () => {
             setActiveTab(1);
             setOpen(0);
           }}
-          className={`rounded-[40px] py-[10px] px-[16px] shrink-0 text-[14px] small:text-[13px] medium:text-[14px] base:text-[16px]
+          className={`cursor-(--f-cursor-pointer) rounded-[40px] py-[10px] px-[16px] shrink-0 text-[14px] hover:bg-[#02A7B6] small:text-[13px] medium:text-[14px] base:text-[16px]
   ${activeTab === 1 ? "bg-[#02A7B6]" : "border border-[#8B8B8B]"}`}
         >
           FAQ Type -2
@@ -110,7 +110,7 @@ const FooterFaq = () => {
             setActiveTab(2);
             setOpen(0);
           }}
-          className={`rounded-[40px] py-[10px] px-[16px] shrink-0 text-[14px] small:text-[13px] medium:text-[14px] base:text-[16px]
+          className={`cursor-(--f-cursor-pointer) rounded-[40px] py-[10px] px-[16px] shrink-0 text-[14px] hover:bg-[#02A7B6] small:text-[13px] medium:text-[14px] base:text-[16px]
   ${activeTab === 2 ? "bg-[#02A7B6]" : "border border-[#8B8B8B]"}`}
         >
           FAQ Type -3
@@ -120,7 +120,7 @@ const FooterFaq = () => {
             setActiveTab(3);
             setOpen(0);
           }}
-          className={`rounded-[40px] py-[10px] px-[16px] shrink-0 text-[14px] small:text-[13px] medium:text-[14px] base:text-[16px]
+          className={`cursor-(--f-cursor-pointer) rounded-[40px] py-[10px] px-[16px] shrink-0 text-[14px] hover:bg-[#02A7B6] small:text-[13px] medium:text-[14px] base:text-[16px]
   ${activeTab === 3 ? "bg-[#02A7B6]" : "border border-[#8B8B8B]"}`}
         >
           FAQ Type -4
@@ -134,7 +134,7 @@ const FooterFaq = () => {
           >
             <button
               onClick={() => setOpen(open === i ? null : i)}
-              className="w-full flex justify-between items-center"
+              className="w-full flex justify-between items-center cursor-(--f-cursor-pointer)"
             >
               <span className="text-[14px] font-medium text-left small:text-[16px] medium:text-[18px] base:text-[20px]">
                 {item.q}
@@ -153,11 +153,11 @@ const FooterFaq = () => {
                   : "grid-rows-[0fr] opacity-0"
               }`}
             >
-              <div
-                className={`overflow-hidden ${open === i ? "pt-5 pe-[20px]" : ""} text-gray-300 text-[12px] medium:text-[14px] medium:text-[16px]`}
+              <p
+                className={`overflow-hidden ${open === i ? "pt-5 pe-[20px]" : ""} text-gray-300 text-[12px] medium:text-[14px] medium:text-[16px] cursor-(--f-cursor-text)`}
               >
                 {item.a}
-              </div>
+              </p>
             </div>
           </div>
         ))}
