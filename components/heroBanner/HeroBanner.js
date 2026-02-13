@@ -36,9 +36,9 @@ const HeroBanner = () => {
         </button>
       </div>
 
-      <div className="flex gap-3 mb-5  order-3 small:order-3  base:mb-10 small:w-full ">
+      <div className="flex gap-3 mb-5  order-3 small:order-3  base:mb-10 small:w-[396px] ">
         <div className="flex items-center gap-2 bg-[#0c2b33] rounded-full flex-1">
-          <img src="/logo/indiamap.png" className="w-15 h-15 rounded-full bg-white" />
+          <img src="/logo/indiamap.png" className="w-15 h-15 rounded-full bg-white small:w-[44px] small:h-[44px]" />
           <p className="text-gray-300 text-[12px] font-semibold ">
             Accredited by <br/>NAAC++
           </p>
@@ -46,7 +46,7 @@ const HeroBanner = () => {
 
         <div className="flex items-center gap-2 bg-[#0c2b33] rounded-full flex-1">
           <img src="/logo/nirf.png" className="w-15 h-15 rounded-full bg-white" />
-          <p className="text-gray-300 text-[12px] font-semibold">
+          <p className="text-gray-300 text-[12px] font-semibold ">
             Among Indias<br/> Top 100 Universities
           </p>
         </div>
