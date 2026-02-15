@@ -1,0 +1,159 @@
+"use client";
+
+import { useState } from "react";
+
+const QUALIFICATIONS = [
+  { value: "", label: "Enter Highest Qualifications" },
+  { value: "Below 12th", label: "Below 12th" },
+  { value: "12th / HSC", label: "12th / HSC" },
+  { value: "Graduation", label: "Graduation" },
+  { value: "Post Graduation", label: "Post Graduation" },
+  { value: "Doctorate", label: "Doctorate" },
+  { value: "Other", label: "Other" },
+];
+
+export default function RequestCallForm() {
+  const [consent, setConsent] = useState(false);
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    qualification: "",
+    interest: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // TODO: wire to API
+  };
+
+  const labelClass = "block text-[#1f2937] font-bold text-[14px] leading-tight font-visual mb-1.5";
+  const inputClass =
+    "w-full rounded-xl bg-[#f3f4f6] border-0 py-3 px-4 text-[#374151] placeholder:text-gray-400 text-[15px] font-visual focus:outline-none focus:ring-2 focus:ring-[#0d9488]/50";
+
+  return (
+    <section className="w-full  flex justify-center mt-[10px]">
+      <div className="w-full rounded-[30px] bg-white shadow-xl overflow-hidden">
+        <form onSubmit={handleSubmit} className="p-[20px]">
+          <h2 className="font-visual font-bold text-[#1f2937] text-[22px] sm:text-[24px] leading-tight">
+            Adapt Early or Fall Behind
+          </h2>
+          <p className="font-visual font-normal text-[#4b5563] text-[15px] sm:text-[16px] leading-snug mt-2">
+            60% of business tasks are becoming AI-driven, stay relevant!
+          </p>
+
+          <div className="mt-6 space-y-4">
+            <div>
+              <label htmlFor="name" className={labelClass}>
+                Name
+              </label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Enter Your Name"
+                value={form.name}
+                onChange={handleChange}
+                className={inputClass}
+              />
+            </div>
+            <div>
+              <label htmlFor="email" className={labelClass}>
+                Email
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Enter Your Email"
+                value={form.email}
+                onChange={handleChange}
+                className={inputClass}
+              />
+            </div>
+            <div>
+              <label htmlFor="phone" className={labelClass}>
+                Phone No.
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="Enter Your Phone No."
+                value={form.phone}
+                onChange={handleChange}
+                className={inputClass}
+              />
+            </div>
+            <div>
+              <label htmlFor="qualification" className={labelClass}>
+                Highest Qualifications
+              </label>
+              <div className="relative">
+                <select
+                  id="qualification"
+                  name="qualification"
+                  value={form.qualification}
+                  onChange={handleChange}
+                  className={`${inputClass} appearance-none pr-10 cursor-(--f-cursor-pointer)`}
+                >
+                  {QUALIFICATIONS.map(({ value, label }) => (
+                    <option key={value || "placeholder"} value={value}>
+                      {label}
+                    </option>
+                  ))}
+                </select>
+                <span
+                  className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500"
+                  aria-hidden
+                >
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div>
+              <label htmlFor="interest" className={labelClass}>
+                Area of Interest
+              </label>
+              <input
+                id="interest"
+                name="interest"
+                type="text"
+                placeholder="Enter Area of Interest"
+                value={form.interest}
+                onChange={handleChange}
+                className={inputClass}
+              />
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full mt-6 py-3.5 rounded-xl bg-[#0d9488] text-white font-bold text-[16px] font-visual cursor-(--f-cursor-pointer) hover:bg-[#0f766e] transition-colors"
+          >
+            Request A Call
+          </button>
+
+          <label className="flex items-start gap-3 mt-4 cursor-(--f-cursor-pointer)">
+            <input
+              type="checkbox"
+              checked={consent}
+              onChange={(e) => setConsent(e.target.checked)}
+              className="mt-0.5 w-5 h-5 rounded border-2 border-[#0d9488] text-[#0d9488] focus:ring-[#0d9488] cursor-(--f-cursor-pointer)"
+            />
+            <span className="font-visual text-[#4b5563] text-[13px] leading-snug">
+              By clicking on Request A Call I allow Atlas University to send program communication on email/sms/WhatsApp etc.
+            </span>
+          </label>
+        </form>
+      </div>
+    </section>
+  );
+}
