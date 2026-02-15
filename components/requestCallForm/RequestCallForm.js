@@ -32,22 +32,22 @@ export default function RequestCallForm() {
     // TODO: wire to API
   };
 
-  const labelClass = "block text-[#1f2937] font-bold text-[14px] leading-tight font-visual mb-1.5";
+  const labelClass = "block text-[#1f2937] font-bold text-[14px] leading-tight font-visual mb-[4px]";
   const inputClass =
     "w-full rounded-xl bg-[#f3f4f6] border-0 py-3 px-4 text-[#374151] placeholder:text-gray-400 text-[15px] font-visual focus:outline-none focus:ring-2 focus:ring-[#0d9488]/50";
 
   return (
-    <section className="w-full  flex justify-center mt-[10px]">
+    <section className="w-full  flex justify-center mt-[10px] hidden small:block">
       <div className="w-full rounded-[30px] bg-white shadow-xl overflow-hidden">
         <form onSubmit={handleSubmit} className="p-[20px]">
-          <h2 className="font-visual font-bold text-[#1f2937] text-[22px] sm:text-[24px] leading-tight">
+          <h2 className="font-visual font-bold text-[#1f2937] text-[20px] leading-tight">
             Adapt Early or Fall Behind
           </h2>
-          <p className="font-visual font-normal text-[#4b5563] text-[15px] sm:text-[16px] leading-snug mt-2">
+          <p className="font-visual font-normal text-[#4b5563] text-[12px]  leading-snug ">
             60% of business tasks are becoming AI-driven, stay relevant!
           </p>
 
-          <div className="mt-6 space-y-4">
+          <div className="mt-[10px] space-y-[8px]">
             <div>
               <label htmlFor="name" className={labelClass}>
                 Name
@@ -136,19 +136,21 @@ export default function RequestCallForm() {
 
           <button
             type="submit"
-            className="w-full mt-6 py-3.5 rounded-xl bg-[#0d9488] text-white font-bold text-[16px] font-visual cursor-(--f-cursor-pointer) hover:bg-[#0f766e] transition-colors"
+            className="w-full my-[10px] p-[14px] rounded-[10px] bg-[#02A7B6] text-white font-bold text-[14px] font-visual cursor-(--f-cursor-pointer) hover:bg-[#0f766e] transition-colors"
           >
             Request A Call
           </button>
 
-          <label className="flex items-start gap-3 mt-4 cursor-(--f-cursor-pointer)">
+          <label className="flex items-center gap-[17px]  cursor-(--f-cursor-pointer)">
+            <div className="p-[3px]">
             <input
               type="checkbox"
               checked={consent}
               onChange={(e) => setConsent(e.target.checked)}
-              className="mt-0.5 w-5 h-5 rounded border-2 border-[#0d9488] text-[#0d9488] focus:ring-[#0d9488] cursor-(--f-cursor-pointer)"
+              className="mt-0.5 w-[18px] h-[18px] rounded border border-[#02A7B6] text-[#02A7B6] focus:ring-[#02A7B6] cursor-(--f-cursor-pointer)"
             />
-            <span className="font-visual text-[#4b5563] text-[13px] leading-snug">
+            </div>
+            <span className="font-visual text-[#272323] text-[10px] leading-snug">
               By clicking on Request A Call I allow Atlas University to send program communication on email/sms/WhatsApp etc.
             </span>
           </label>

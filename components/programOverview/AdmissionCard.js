@@ -40,7 +40,7 @@ export default function AdmissionCard() {
     <div className="w-full  rounded-[30px] overflow-hidden bg-white shadow-lg">
       {/* Top: gradient + admission status + countdown */}
       <div
-        className="bg-[linear-gradient(90deg,_#0d9488_0%,_#4c1d95_100%)] pt-[10px] pr-[2px] pb-[2px] pl-[2px] small:px-0"
+        className="bg-[linear-gradient(90deg,_#0d9488_0%,_#4c1d95_100%)]  pr-[2px] pb-[2px] pl-[2px] small:pl-0 small:pr-0 small:pb-0 "
 
       >
         <p className="text-center text-white font-medium text-[12px] leading-tight font-visual pt-[10px]">

@@ -16,7 +16,7 @@ export default function Home() {
 
    
   
-    <section className="h-[2000px] border-1 w-full border-amber-600 bg-black"></section>
+    <section className="h-[100px] border-1 w-full border-amber-600 bg-black"></section>
     <Footer/>
   
     <GlowEffect/>

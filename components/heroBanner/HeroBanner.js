@@ -1,7 +1,7 @@
 import HeroSlider from "./HeroSlider";
 const HeroBanner = () => {
   return (
- <section className="bg-black relative overflow-hidden  py-[40px] px-3 text-white small:grid small:grid-cols-2 small:gap-10 small:px-10 small:items-center large:gap-[200px] large:px-30">
+ <section className="bg-black relative overflow-hidden  py-[40px] px-[24px] text-white small:grid small:grid-cols-2 small:gap-10 small:pl-[60px] small:pr-[40px] small:items-center large:gap-[200px] large:px-30">
 
 
 
