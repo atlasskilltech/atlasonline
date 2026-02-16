@@ -43,21 +43,21 @@ export default function AdmissionCard() {
         className="bg-[linear-gradient(90deg,_#0d9488_0%,_#4c1d95_100%)]  pr-[2px] pb-[2px] pl-[2px] small:pl-0 small:pr-0 small:pb-0 "
 
       >
-        <p className="text-center text-white font-medium text-[12px] leading-tight font-visual pt-[10px]">
+        <p className="text-center text-white font-medium text-[12px] leading-tight font-visual pt-[10px] medium:text-[14px]">
           Admission Closed on 02 Feb
         </p>
-        <div className="flex flex-col justify-center items-center gap-[10px] self-stretch px-[2px] pt-[10px] pb-[10px]">
+        <div className="flex flex-col justify-center items-center gap-[10px] self-stretch px-[2px] pt-[10px] pb-[10px] ">
           
-          <div className="flex w-[256px] justify-between items-center">
+          <div className="flex w-[256px] justify-between items-center medium:w-[300px] base:w-[325px]">
             {segments.map(({ value, label }) => (
               <div
                 key={label}
-                className="flex flex-col justify-center items-center w-[50px] h-[50px] p-1 flex-shrink-0 rounded-[10px] bg-white/80"
+                className="flex flex-col justify-center items-center w-[50px] h-[50px] p-1  shrink-0 rounded-[10px] bg-white/80 medium:w-[60px] medium:h-[60px] medium:p-[9px]n large:p-[10px]"
               >
-                <span className="text-[#222] text-center font-visual text-[20px] font-semibold leading-[1.4] tracking-[0.02em]  ">
+                <span className="text-[#222] text-center font-visual text-[20px] font-semibold leading-[1.4] tracking-[0.02em] medium:text-[21px] base:text-[24px] ">
                   {mounted ? pad(value) : "00"}
                 </span>
-                <span className="text-[#222] text-center font-visual text-[8px] not-italic font-normal leading-[1.4] tracking-[0.08px]">
+                <span className="text-[#222] text-center font-visual text-[8px] not-italic font-normal leading-[1.4] tracking-[0.08px] base:text-[9px]">
                   {label}
                 </span>
               </div>

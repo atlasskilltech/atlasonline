@@ -32,22 +32,22 @@ export default function RequestCallForm() {
     // TODO: wire to API
   };
 
-  const labelClass = "block text-[#1f2937] font-bold text-[14px] leading-tight font-visual mb-[4px]";
+  const labelClass = "block text-[#1f2937] font-bold text-[12px] leading-tight font-visual mb-[4px] base:text-[14px] ";
   const inputClass =
-    "w-full rounded-xl bg-[#f3f4f6] border-0 py-3 px-4 text-[#374151] placeholder:text-gray-400 text-[15px] font-visual focus:outline-none focus:ring-2 focus:ring-[#0d9488]/50";
+    "w-full rounded-[2px] bg-[#f3f4f6] border-0 p-[8px] text-[#222222] placeholder:text-[#222222] text-[12px] font-visual focus:outline-none focus:ring-2 focus:ring-[#0d9488]/50    base:p-[10px base:text-[14px]";
 
   return (
-    <section className="w-full  flex justify-center mt-[10px] hidden small:block">
-      <div className="w-full rounded-[30px] bg-white shadow-xl overflow-hidden">
+    <section className="w-full  flex justify-center mt-[10px] hidden small:block medium:mt-[20px]">
+      <div className="w-full rounded-[30px]  bg-white shadow-xl overflow-hidden medium:rounded-[28px]">
         <form onSubmit={handleSubmit} className="p-[20px]">
-          <h2 className="font-visual font-bold text-[#1f2937] text-[20px] leading-tight">
+          <h2 className="font-visual font-bold text-[#1f2937] text-[20px] leading-tight medium:text-[22px] base:text-[24px]">
             Adapt Early or Fall Behind
           </h2>
-          <p className="font-visual font-normal text-[#4b5563] text-[12px]  leading-snug ">
+          <p className="font-visual font-normal text-[#4b5563] text-[12px]  leading-snug base:text-[14px] ">
             60% of business tasks are becoming AI-driven, stay relevant!
           </p>
 
-          <div className="mt-[10px] space-y-[8px]">
+          <div className="mt-[10px] space-y-[8px] medium:mt-[20px] medium:space-y-[10px]">
             <div>
               <label htmlFor="name" className={labelClass}>
                 Name
@@ -136,7 +136,7 @@ export default function RequestCallForm() {
 
           <button
             type="submit"
-            className="w-full my-[10px] p-[14px] rounded-[10px] bg-[#02A7B6] text-white font-bold text-[14px] font-visual cursor-(--f-cursor-pointer) hover:bg-[#0f766e] transition-colors"
+            className="w-full my-[10px] py-[14px] px-[24px] rounded-[10px] bg-[#02A7B6] text-white font-bold text-[14px] font-visual cursor-(--f-cursor-pointer) hover:bg-[#0f766e] transition-colors medium:px-[24px] medium:my-[20px] base:py-[24px]"
           >
             Request A Call
           </button>

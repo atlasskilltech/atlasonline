@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-visual relative max-w-[1920px] mx-auto pt-[112px] medium:pt-[131px] cursor-(--f-cursor-default)`}
       >
-       <SmoothScroll>{children}</SmoothScroll>
-      {/* {children} */}
+       {/* <SmoothScroll>{children}</SmoothScroll> */}
+      {children}
       </body>
     </html>
   );
