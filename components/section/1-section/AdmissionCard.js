@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import RequestCallForm from "@/components/requestCallForm/RequestCallForm";
+import RequestCallForm from "./RequestCallForm";
 
 const COUNTDOWN_TARGET = new Date("2026-03-15T23:59:59"); // Next admission deadline – configurable
 

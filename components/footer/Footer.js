@@ -1,4 +1,5 @@
-import FooterFaq from "../faq/FooterFaq";
+
+import FooterFaq from "./FooterFaq";
 const Footer = () => {
   return (
     <footer className="">

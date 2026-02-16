@@ -106,13 +106,6 @@ export function WhatsappCirle({ className }) {
 }
 
 
-
-
-
-
-
-
-
 export function Call({ className }) {
   return (
    
