@@ -28,7 +28,6 @@ export default function Home() {
       <HeroBanner />
       <ProgramOverview/>
       <ProgramChoose/>
-      <Wealth/>
       <CanTakeYou/>
       <BuiltAmbitious/>
       <PathToGlobal/>
