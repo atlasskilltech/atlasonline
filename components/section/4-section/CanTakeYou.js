@@ -25,7 +25,7 @@ const CanTakeYou = () => {
        </div>
 
         <p
-        className="text-[14px] leading-[1.49]  font-visual text-[rgba(255,255,255,0.90)] small:text-[15px] medium:text-[16px] base:text-[20px]"
+        className="text-[14px] leading-[1.49]  font-visual text-[rgba(255,255,255,0.90)]  medium:text-[16px] base:text-[18px]"
       >
 
     Work through real client scenarios—from building multi-generational wealth plans to navigating market volatility, tax law changes, and complex insurance needs faced by high-net-worth individuals.
@@ -33,81 +33,201 @@ const CanTakeYou = () => {
 
 <div className="grid grid-cols-1 small:grid-cols-2 gap-[24px]">
   <div className="bg-black flex flex-col gap-[24px]">
+
+
+
+
+
+
+
+
     <div className="flex">
-        <div className="bg-white/15 backdrop-blur-md flex flex-col items-start p-[10px] gap-2 flex-1">
-            <h3 className="text-[#56E2F5] font-semibold text-[16px]">
+        <div className="
+        bg-white/15 backdrop-blur-md flex flex-col items-start p-[10px] gap-2 flex-1 
+        small:p-[15px] small:gap-[6px] 
+        medium:p-[16px] medium:gap-[7px] 
+        base:p-[20px] base:gap-[8px]
+        ">
+            <h3 className="text-[#56E2F5] font-semibold text-[16px]  small:text-[13px]  medium:text-[14px] base:text-[18px]  ">
                 Wealth Manager / Private Banker
             </h3>
-            <p className="text-[#fff] text-[14px] ">
+            <p className="text-[#fff] text-[14px] small:text-[10px]  medium:text-[12px] base:text-[14px]">
                 Advise high-net-worth clients on investments, retirement, tax, and estate planning.
             </p>
         </div>
 
-            <div className="flex flex-col justify-center items-center p-[10px] gap-2 self-stretch bg-white">
-                <p className="font-denton text-[#342B7C] text-[20px] font-bold">20-30 LPA</p>
-                <p className="text-[#222] text-[14px] font-normal">Avg Salary</p>
+            <div className="
+            flex flex-col justify-center items-center p-[10px] gap-2 self-stretch bg-white 
+            small:p-[15px] small:gap-[6px] 
+            medium:p-[16px] 
+            base:p-[20px] base:gap-[8px]">
+                <p className="font-denton text-[#342B7C] text-[20px] font-bold small:text-[16px]  medium:text-[20px] base:text-[24px]">20-30 LPA</p>
+                <p className="text-[#222] text-[14px] font-normal small:text-[10px] medium:text-[12px] base:text-[14px]">Avg Salary</p>
             </div>
 
 
 
     </div>
-    <div className="flex">
-        <div className="bg-white/15 backdrop-blur-md flex flex-col items-start p-[10px] gap-2 flex-1">
-            <h3 className="text-[#56E2F5] font-semibold text-[16px]">
-               Certified Financial Planner (CFP® Professional)
+
+
+
+ <div className="flex">
+        <div className="
+        bg-white/15 backdrop-blur-md flex flex-col items-start p-[10px] gap-2 flex-1 
+        small:p-[15px] small:gap-[6px] 
+        medium:p-[16px] medium:gap-[7px] 
+        base:p-[20px] base:gap-[8px]
+        ">
+            <h3 className="text-[#56E2F5] font-semibold text-[16px]  small:text-[13px]  medium:text-[14px] base:text-[18px]  ">
+                Wealth Manager / Private Banker
             </h3>
-            <p className="text-[#fff] text-[14px] ">
-              Build comprehensive, goal-based financial plans across investments, insurance, tax, retirement, and estate planning.
+            <p className="text-[#fff] text-[14px] small:text-[10px]  medium:text-[12px] base:text-[14px]">
+                Advise high-net-worth clients on investments, retirement, tax, and estate planning.
             </p>
         </div>
 
-            <div className="flex flex-col justify-center items-center p-[10px] gap-2 self-stretch bg-white">
-                <p className="font-denton text-[#342B7C] text-[20px] font-bold">20-30 LPA</p>
-                <p className="text-[#222] text-[14px] font-normal">Avg Salary</p>
+            <div className="
+            flex flex-col justify-center items-center p-[10px] gap-2 self-stretch bg-white 
+            small:p-[15px] small:gap-[6px] 
+            medium:p-[16px] 
+            base:p-[20px] base:gap-[8px]">
+                <p className="font-denton text-[#342B7C] text-[20px] font-bold small:text-[16px]  medium:text-[20px] base:text-[24px]">20-30 LPA</p>
+                <p className="text-[#222] text-[14px] font-normal small:text-[10px] medium:text-[12px] base:text-[14px]">Avg Salary</p>
             </div>
 
 
 
     </div>
+
+ <div className="flex">
+        <div className="
+        bg-white/15 backdrop-blur-md flex flex-col items-start p-[10px] gap-2 flex-1 
+        small:p-[15px] small:gap-[6px] 
+        medium:p-[16px] medium:gap-[7px] 
+        base:p-[20px] base:gap-[8px]
+        ">
+            <h3 className="text-[#56E2F5] font-semibold text-[16px]  small:text-[13px]  medium:text-[14px] base:text-[18px]  ">
+                Wealth Manager / Private Banker
+            </h3>
+            <p className="text-[#fff] text-[14px] small:text-[10px]  medium:text-[12px] base:text-[14px]">
+                Advise high-net-worth clients on investments, retirement, tax, and estate planning.
+            </p>
+        </div>
+
+            <div className="
+            flex flex-col justify-center items-center p-[10px] gap-2 self-stretch bg-white 
+            small:p-[15px] small:gap-[6px] 
+            medium:p-[16px] 
+            base:p-[20px] base:gap-[8px]">
+                <p className="font-denton text-[#342B7C] text-[20px] font-bold small:text-[16px]  medium:text-[20px] base:text-[24px]">20-30 LPA</p>
+                <p className="text-[#222] text-[14px] font-normal small:text-[10px] medium:text-[12px] base:text-[14px]">Avg Salary</p>
+            </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+   
   </div>
   <div className="bg-black flex flex-col gap-[24px]">
       <div className="flex">
-        <div className="bg-white/15 backdrop-blur-md flex flex-col items-start p-[10px] gap-2 flex-1">
-            <h3 className="text-[#56E2F5] font-semibold text-[16px]">
+        <div className="
+        bg-white/15 backdrop-blur-md flex flex-col items-start p-[10px] gap-2 flex-1 
+        small:p-[15px] small:gap-[6px] 
+        medium:p-[16px] medium:gap-[7px] 
+        base:p-[20px] base:gap-[8px]
+        ">
+            <h3 className="text-[#56E2F5] font-semibold text-[16px]  small:text-[13px]  medium:text-[14px] base:text-[18px]  ">
                 Wealth Manager / Private Banker
             </h3>
-            <p className="text-[#fff] text-[14px] ">
+            <p className="text-[#fff] text-[14px] small:text-[10px]  medium:text-[12px] base:text-[14px]">
                 Advise high-net-worth clients on investments, retirement, tax, and estate planning.
             </p>
         </div>
 
-            <div className="flex flex-col justify-center items-center p-[10px] gap-2 self-stretch bg-white">
-                <p className="font-denton text-[#342B7C] text-[20px] font-bold">20-30 LPA</p>
-                <p className="text-[#222] text-[14px] font-normal">Avg Salary</p>
+            <div className="
+            flex flex-col justify-center items-center p-[10px] gap-2 self-stretch bg-white 
+            small:p-[15px] small:gap-[6px] 
+            medium:p-[16px] 
+            base:p-[20px] base:gap-[8px]">
+                <p className="font-denton text-[#342B7C] text-[20px] font-bold small:text-[16px]  medium:text-[20px] base:text-[24px]">20-30 LPA</p>
+                <p className="text-[#222] text-[14px] font-normal small:text-[10px] medium:text-[12px] base:text-[14px]">Avg Salary</p>
             </div>
 
 
 
     </div>
-    <div className="flex">
-        <div className="bg-white/15 backdrop-blur-md flex flex-col items-start p-[10px] gap-2 flex-1">
-            <h3 className="text-[#56E2F5] font-semibold text-[16px]">
-               Certified Financial Planner (CFP® Professional)
+
+ <div className="flex">
+        <div className="
+        bg-white/15 backdrop-blur-md flex flex-col items-start p-[10px] gap-2 flex-1 
+        small:p-[15px] small:gap-[6px] 
+        medium:p-[16px] medium:gap-[7px] 
+        base:p-[20px] base:gap-[8px]
+        ">
+            <h3 className="text-[#56E2F5] font-semibold text-[16px]  small:text-[13px]  medium:text-[14px] base:text-[18px]  ">
+                Wealth Manager / Private Banker
             </h3>
-            <p className="text-[#fff] text-[14px] ">
-              Build comprehensive, goal-based financial plans across investments, insurance, tax, retirement, and estate planning.
+            <p className="text-[#fff] text-[14px] small:text-[10px]  medium:text-[12px] base:text-[14px]">
+                Advise high-net-worth clients on investments, retirement, tax, and estate planning.
             </p>
         </div>
 
-            <div className="flex flex-col justify-center items-center p-[10px] gap-2 self-stretch bg-white">
-                <p className="font-denton text-[#342B7C] text-[20px] font-bold">20-30 LPA</p>
-                <p className="text-[#222] text-[14px] font-normal">Avg Salary</p>
+            <div className="
+            flex flex-col justify-center items-center p-[10px] gap-2 self-stretch bg-white 
+            small:p-[15px] small:gap-[6px] 
+            medium:p-[16px] 
+            base:p-[20px] base:gap-[8px]">
+                <p className="font-denton text-[#342B7C] text-[20px] font-bold small:text-[16px]  medium:text-[20px] base:text-[24px]">20-30 LPA</p>
+                <p className="text-[#222] text-[14px] font-normal small:text-[10px] medium:text-[12px] base:text-[14px]">Avg Salary</p>
             </div>
 
 
 
     </div>
+
+ <div className="flex">
+        <div className="
+        bg-white/15 backdrop-blur-md flex flex-col items-start p-[10px] gap-2 flex-1 
+        small:p-[15px] small:gap-[6px] 
+        medium:p-[16px] medium:gap-[7px] 
+        base:p-[20px] base:gap-[8px]
+        ">
+            <h3 className="text-[#56E2F5] font-semibold text-[16px]  small:text-[13px]  medium:text-[14px] base:text-[18px]  ">
+                Wealth Manager / Private Banker
+            </h3>
+            <p className="text-[#fff] text-[14px] small:text-[10px]  medium:text-[12px] base:text-[14px]">
+                Advise high-net-worth clients on investments, retirement, tax, and estate planning.
+            </p>
+        </div>
+
+            <div className="
+            flex flex-col justify-center items-center p-[10px] gap-2 self-stretch bg-white 
+            small:p-[15px] small:gap-[6px] 
+            medium:p-[16px] 
+            base:p-[20px] base:gap-[8px]">
+                <p className="font-denton text-[#342B7C] text-[20px] font-bold small:text-[16px]  medium:text-[20px] base:text-[24px]">20-30 LPA</p>
+                <p className="text-[#222] text-[14px] font-normal small:text-[10px] medium:text-[12px] base:text-[14px]">Avg Salary</p>
+            </div>
+
+
+
+    </div>
+
+
+
+
   </div>
+
+
+
 </div>
 
   </div>
