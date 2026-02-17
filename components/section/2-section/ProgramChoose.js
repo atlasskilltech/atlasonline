@@ -73,14 +73,14 @@ const ProgramChoose = () => {
 
   return (
     <section
-      className="rk-why-program-section relative w-full px-[20px] small:px-[56px] py-[48px]
+      className="rk-why-program-section relative w-full px-[20px] small:px-[140px] py-[48px]
 
       bg-[radial-gradient(circle_at_0%_120%,rgba(123,78,247,0.45)_0%,rgba(123,78,247,0.15)_25%,transparent_55%),radial-gradient(circle_at_120%_0%,rgba(0,212,235,0.55)_0%,rgba(0,212,235,0.2)_30%,transparent_60%),linear-gradient(135deg,#000000_0%,#05010d_45%,#000000_100%)]
 
       bg-cover bg-no-repeat"
       aria-labelledby="why-program-heading"
     >
-      <div className="max-w-[1280px] mx-auto">
+      <div className="mx-auto">
 
         {/* Header */}
         <header className="rk-section-header mb-8 small:mb-12">
