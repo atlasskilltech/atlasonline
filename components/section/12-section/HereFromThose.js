@@ -90,24 +90,7 @@ export default function HereFromThose() {
         w-full   px-[24px] py-[40px] bg-black small:pl-[60px] small:pr-[40px]    medium:py-[50px]  base:pl-[80px] base:pr-[70px]  base:py-[70px]      large:px-[140px]   large:py-[80px]
       "
     >
-      {/* Desktop Background */}
-        <div className="hidden small:block absolute inset-0 -z-10">
-
-        <div className="
-          absolute left-0 top-0 w-[55%] h-full
-          bg-gradient-to-br
-          from-indigo-600 via-purple-600 to-transparent
-          opacity-80
-        " />
-
-        <div className="
-          absolute right-0 top-0 w-[45%] h-full
-          bg-gradient-to-bl
-          from-cyan-400 to-transparent
-          opacity-70
-        " />
-
-        </div>
+    
 
 
 
