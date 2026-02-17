@@ -73,27 +73,21 @@ const ProgramChoose = () => {
 
   return (
     <section
-      className="rk-why-program-section relative w-full px-[20px] small:px-[56px] py-[48px]
-
-      bg-[radial-gradient(circle_at_0%_120%,rgba(123,78,247,0.45)_0%,rgba(123,78,247,0.15)_25%,transparent_55%),radial-gradient(circle_at_120%_0%,rgba(0,212,235,0.55)_0%,rgba(0,212,235,0.2)_30%,transparent_60%),linear-gradient(135deg,#000000_0%,#05010d_45%,#000000_100%)]
-
-      bg-cover bg-no-repeat"
+      className="   w-full flex flex-col  px-[24px] py-[40px] bg-black    small:flex-row small:gap-[40px]    small:pl-[60px] small:pr-[40px]    medium:py-[50px]   base:gap-[73px]   base:pl-[80px] base:pr-[70px]  base:py-[70px]      large:px-[140px]   large:py-[80px]   large:gap-[110px]"
       aria-labelledby="why-program-heading"
     >
-      <div className="max-w-[1280px] mx-auto">
+      <div className="mx-auto w-full">
 
         {/* Header */}
         <header className="rk-section-header mb-8 small:mb-12">
-          <p className="text-white text-[20px] small:text-[22px] font-visual">
-            Why Choose
-          </p>
+        <p className="text-[24px] text-gray-300 font-semibold  small:text-[28px] medium:text-[30px] base:text-[40px] cursor-(--f-cursor-text)
+      ">    
+        Why Choose
+        </p>
 
-          <h2
-            id="why-program-heading"
-            className="mt-1 font-denton text-[36px] small:text-[44px] base:text-[56px] text-white/95 leading-[0.95]"
-          >
-            This Program
-          </h2>
+        <h1 className="text-[32px] font-bold font-denton leading-tight bg-gradient-to-r from-white to-[#00D4EB] bg-clip-text text-transparent  small:text-[44px] medium:text-[54px] base:text-[64px] cursor-(--f-cursor-text)">
+        This Program
+        </h1>
         </header>
 
         {/* Cards Grid */}
