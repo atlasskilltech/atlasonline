@@ -6,11 +6,13 @@ import Lenis from "lenis";
 export default function SmoothScroll({ children }) {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 2.6, // luxury float feel
+      duration: 1.4, // 2.6 bahut heavy tha
       smoothWheel: true,
-      smoothTouch: true,
-      wheelMultiplier: 0.8, // heavy scroll weight
-      easing: (t) => 1 - Math.pow(1 - t, 5), // premium easing curve
+      smoothTouch: false, // touch pe lag hota hai
+      wheelMultiplier: 1, 
+      touchMultiplier: 1.2,
+      lerp: 0.08, // REAL smoothness control (important)
+      easing: (t) => 1 - Math.pow(1 - t, 4),
     });
 
     function raf(time) {
@@ -20,7 +22,9 @@ export default function SmoothScroll({ children }) {
 
     requestAnimationFrame(raf);
 
-    return () => lenis.destroy();
+    return () => {
+      lenis.destroy();
+    };
   }, []);
 
   return children;
