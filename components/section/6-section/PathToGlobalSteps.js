@@ -3,39 +3,51 @@ const PathToGlobalSteps = () => {
     {
       number: "01",
       title: "Submit Application",
-      description:
-        "Complete the application by providing the essential details about yourself.",
+      description:(
+        <>
+        
+        Complete the application by providing <br className="hidden base:block" /> the   
+        <br className="hidden small:block base:hidden" />
+        essential details about yourself.
+        </>
+      ),
     },
     {
       number: "02",
       title: "Reserve Your Seat",
-      description: "Secure your seat by completing the program fee payment.",
+      description: (
+        <>
+        Secure your seat by completing the
+        <br className="hidden small:block" />
+         program fee payment.
+        
+        </>
+      ),
     },
     {
       number: "03",
       title: "Start Learning",
-      description:
-        "Begin your learning journey on the designated cohort start date.",
+      description:(
+        <>
+        Begin your learning journey on the
+        <br className="hidden small:block" />
+        designated cohort start date.    
+        </>
+      ),
     },
   ];
   return (
     <div className=" small:order-2 small:flex-1">
-
-
-
-
       {steps.map((step, index) => (
-        
-        
-        <div key={index}>
-{index === 0 && (
-
-<div className="hidden small:inline-block small:text-[#000] small:rounded-[20px] small:bg-[rgba(86,226,245,0.30)] small:px-[20px] small:py-[10px] small:mb-[29px] small:font-semibold small:text-[18px] medium:text-[16px] medium:mb-[12px] base:mb-[37px] base:text-[20px] large:mb-[31px]">Application Process</div>
+        <div  key={index}>
 
 
-)}
-            
-        
+          {index === 0 && (
+            <div className="hidden small:inline-block small:text-[#000] small:rounded-[20px] small:bg-[rgba(86,226,245,0.30)] small:px-[20px] small:py-[10px] small:mb-[29px] small:font-semibold small:text-[18px] medium:text-[16px] medium:mb-[12px] base:mb-[37px] base:text-[20px] large:mb-[31px]">
+              Application Process
+            </div>
+          )}
+
           <div className="inline-flex justify-center items-center gap-4 small:gap-[20px] base:gap-[27px]">
             <div
               className="flex w-[60px] h-[60px] p-[10px] 
@@ -66,7 +78,7 @@ const PathToGlobalSteps = () => {
           </div>
           {/* Line Same Position Par */}
           {index !== steps.length - 1 && (
-            <div className="inline-flex justify-center items-center gap-4">
+            <div className="block justify-center items-center gap-4">
               <div
                 className="flex w-[60px] h-[60px] p-[10px] 
           flex-col justify-center items-center 
