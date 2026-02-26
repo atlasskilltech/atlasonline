@@ -17,7 +17,7 @@ const Wealth = () => {
         alt="person"
         width={400}
         height={600}
-        className="absolute bottom-0 left-[45%] -translate-x-1/2 small:w-[294px] medium:w-[336px] base:w-[421px]"
+        className="hidden absolute bottom-0 left-[45%] -translate-x-1/2 small:block small:w-[294px] medium:w-[336px] base:w-[421px]"
       />
       <div className="flex flex-col gap-[24px] small:gap-[39px] medium:gap-[40px] base:gap-[41px] large:gap-[21px]">
         <div>

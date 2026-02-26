@@ -124,3 +124,32 @@ export function Whatsapp({ className }) {
 
   );
 }
+
+
+
+
+
+
+
+
+export function LeftArrow({ className }) {
+  return (
+   
+<svg className={className} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M9.57 5.92969L3.5 11.9997L9.57 18.0697" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinejoin="round" />
+  <path d="M20.5 12H3.66998" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinejoin="round"/>
+</svg>
+  );
+}
+
+
+
+export function RightArrow({ className }) {
+  return (
+   
+<svg className={className} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M14.4301 5.92969L20.5001 11.9997L14.4301 18.0697" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinejoin="round" />
+  <path d="M3.5 12H20.33" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinejoin="round"/>
+</svg>
+  );
+}
